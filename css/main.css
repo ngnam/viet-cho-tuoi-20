@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+body {
+  color: white;
+  background-color: #333;
+  position: relative;
+  font-size: 1.5em;
+}
+
+.container {
+  width: calc(50% - 100px);
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.container .row {
+  padding: 1em;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+  .zoom-page {
+    height: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.content {
+  -moz-transition: font-size 1000ms ease;
+  -webkit-transition: font-size 1000ms ease;
+  -ms-transition: font-size 1000ms ease;
+  transition: font-size 1000ms ease;
+}
+
+p {
+  text-indent: 1em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.zoom-page {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: transparent;
+  display: flex;
+}
+
+.zoom-page > span {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  color: #fff;
+  width: 50px;
+  display: inline-block;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.zoom-page > span {
+  -moz-transition: background-color 500ms linear;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
+.zoom-page > span {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom-page > span:last-child {
+  margin-right: 0;
+}
+
+.zoom-page > span:hover {
+  background-color: #fff;
+  color: #333;
+}
